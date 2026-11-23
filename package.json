@@ -1,0 +1,30 @@
+{
+    "name": "git-snapshot-reviewer",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Review PNG snapshot changes between Git revisions in a local browser.",
+    "license": "MIT",
+    "engines": {
+        "node": ">=20"
+    },
+    "packageManager": "yarn@3.6.1",
+    "bin": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js",
+        "review": "node src/server.js",
+        "test": "node --test test/*.test.js",
+        "format:check": "prettier --check .",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "pngjs": "7.0.0"
+    },
+    "devDependencies": {
+        "prettier": "3.3.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AlexandraGallipoliRodrigues/git-snapshot-reviewer.git"
+    },
+    "homepage": "https://github.com/AlexandraGallipoliRodrigues/git-snapshot-reviewer#readme"
+}
